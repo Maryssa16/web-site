@@ -1,0 +1,110 @@
+
+
+/* Reset do navegador */
+* {
+  margin: 0px ; 
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  background: #302d2d;
+}
+
+a{
+  text-decoration: none;
+  color:#cbf7e8;
+}
+
+a:hover{
+  color:#d1c49e;
+}
+
+i{
+  color:rgb(210, 228, 222) ;
+}
+
+#header{
+  display: flex;     /* responsivel */
+  flex-flow: row wrap;  /* abilita quebra-de-linha */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+ padding: 5px 1px; 
+ z-index: 2;
+}
+
+.trocar-tema{
+  display: flex;
+  font-size: 20px;
+  justify-content: flex-end;
+}
+#trocar-tema{
+  font-size: 20px;
+  color:rgb(219, 231, 231) ;
+  cursor:pointer;
+  transition: 1s;
+
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  background: #b9aeae73;
+  gap: 15px ;
+
+}
+
+.menu-item{
+ width: 100%;
+}
+
+.menu-link{
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.menu-mobile{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-between;
+  border-top: 5px solid #cbf7e8;
+
+}
+
+
+
+.menu-mobile  .menu-link{
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 15px ;
+
+  
+}
+
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text,
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text{
+  color: #d499a3;
+  font-size: 20px;
+  
+}
+
+.menu-icon,
+.menu-text{
+  color: rgba(197, 230, 219, 0.733);
+  font-weight: 600; /* aumenta a expressura */
+}
+
+.menu-icon{
+  font-size: 20px;
+}
+
+.menu-text{
+  font-size: 16px;
+  text-transform: uppercase;
+}
