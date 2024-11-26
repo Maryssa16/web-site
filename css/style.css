@@ -42,7 +42,7 @@ i{
 }
 #trocar-tema{
   font-size: 20px;
-  color:rgb(219, 231, 231) ;
+  color:rgb(17, 255, 255) ;
   cursor:pointer;
   transition: 1s;
 
@@ -90,21 +90,119 @@ gap: 8px;
 .menu-link:hover .menu-icon,
 .menu-link:hover .menu-text{
   color: #d499a3;
-  font-size: 20px;
+  font-size: 18px;
   
 }
 
 .menu-icon,
 .menu-text{
-  color: rgba(197, 230, 219, 0.733);
+  color: #c5e6dbbb;
   font-weight: 600; /* aumenta a expressura */
 }
 
 .menu-icon{
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .menu-text{
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
+}
+
+.header-nav{
+  display: none ;
+}
+
+.menu-principal {
+  gap: 16px;
+}
+
+.menu-social{
+  gap: 16px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 18px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+
+}
+
+.btn:hover{
+  transform: scale(1.05);
+  transition: ease-in-out .2s;
+}
+
+.bnt span,
+.btn i{
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  border: 1px solid rgb(199, 245, 227);
+  border-radius: 20px 15px;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+}
+
+.video iframe{
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+#home,
+.projetos,
+.sobre,
+.contato {
+  padding: 40px 15px ;
+
+}
+
+
+p{
+  color: #ffffff;
+}
+
+/* responsivo */
+
+@media (min-width: 768px) { /* largura limitada */
+     
+  #header {
+    position: fixed;
+  border-bottom: 1px solid rgb(171, 219, 203);
+  padding: 16px 96px;
+  background: #302d2d;
+}
+
+.nav-mobile{
+  display: none;
+}
+
+.header-nav{
+  display: flex;
+}
+ 
+.header-nav,
+.trocar-tema {
+  min-width: 30%;
+} 
+
+
 }
