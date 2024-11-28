@@ -1,164 +1,242 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Maryssa | web site </title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!-- Box Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <!DOCTYPE html>
+    <html lang="pt-br" data-theme="dark">
     
-</head>
-
-<body>
-    <header id="header"> <!-- cabeçalho -->
-
-        <!-- menu principal = DESKTOP -->
-        <nav class="header-nav">
-
-            <ul class="menu menu-principal">
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Maryssa | web site </title>
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    
+    
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+        <!-- Box Icons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+        
+    </head>
+    
+    <body>
+        <header id="header"> <!-- cabeçalho -->
+    
+            <!-- menu principal = DESKTOP -->
+            <nav class="header-nav">
+    
+                <ul class="menu menu-principal">
+    
+                    <li class="menu-item">
+                        <a href="#home" class="menu-link active">
+                            <span class="menu-text"> Home </span>
+                        </a>
+                    </li>
+    
+                    <li class="menu-item">
+                        <a href="#projetos" class="menu-link">
+                            <span class="menu-text"> Projetos </span>
+                        </a>
+                    </li>
+    
+                    <li class="menu-item">
+                        <a href="#sobre" class="menu-link">
+                            <span class="menu-text"> Sobre </span>
+                        </a>
+                    </li>
+    
+                    <li class="menu-item">
+                        <a href="#contato" class="menu-link">
+                            <span class="menu-text"> Contato </span>
+                        </a>
+                    </li>
+    
+                </ul> <!-- fim ul -->
+    
+            </nav> <!-- fim nav -->
+    
+            <!-- LOGO -->
+            <div class="header-logo">
+                <a href="#home">
+                    <img src="img/" alt="">
+                </a>
+            </div>
+    
+            <!-- trocar cor do tema -->
+            <div class="trocar-tema">
+                <i id="trocarTema" class="bi bi-sun"></i>
+            </div>
+    
+        </header> <!-- fim header -->
+    
+        <!-- menu mobile -->
+        <nav class="nav-mobile">
+            <ul class="menu menu-mobile">
+    
                 <li class="menu-item">
                     <a href="#home" class="menu-link active">
-                        <span class="menu-text"> Home </span>
+                        <i class="menu-icon bi bi-house-door"> </i>
+                        <span class="menu-text"> home </span>
                     </a>
                 </li>
-
+    
                 <li class="menu-item">
                     <a href="#projetos" class="menu-link">
-                        <span class="menu-text"> Projetos </span>
+                        <i class="menu-icon bi-journal-code"></i>
+                        <span class="menu-text"> projetos </span>
                     </a>
                 </li>
-
+    
                 <li class="menu-item">
                     <a href="#sobre" class="menu-link">
-                        <span class="menu-text"> Sobre </span>
+                        <i class="menu-icon bx bx-user"></i>
+                        <span class="menu-text"> sobre </span>
                     </a>
                 </li>
-
+    
                 <li class="menu-item">
                     <a href="#contato" class="menu-link">
-                        <span class="menu-text"> Contato </span>
+                        <i class="menu-icon bi-telephone"></i>
+                        <span class="menu-text"> contato </span>
                     </a>
                 </li>
-
-            </ul> <!-- fim ul -->
-
-        </nav> <!-- fim nav -->
-
-        <!-- LOGO -->
-        <div class="header-logo">
-            <a href="#home">
-                <img src="img/" alt="">
-            </a>
-        </div>
-
-        <!-- trocar cor do tema -->
-        <div class="trocar-tema">
-            <i id="trocarTema" class="bi bi-sun"></i>
-        </div>
-
-    </header> <!-- fim header -->
-
-    <!-- menu mobile -->
-    <nav class="nav-mobile">
-        <ul class="menu menu-mobile">
-
-            <li class="menu-item">
-                <a href="#home" class="menu-link active">
-                    <i class="menu-icon bi bi-house-door"> </i>
-                    <span class="menu-text"> home </span>
-                </a>
-            </li>
-
-            <li class="menu-item">
-                <a href="#projetos" class="menu-link">
-                    <i class="menu-icon bi-journal-code"></i>
-                    <span class="menu-text"> projetos </span>
-                </a>
-            </li>
-
-            <li class="menu-item">
-                <a href="#sobre" class="menu-link">
-                    <i class="menu-icon bx bx-user"></i>
-                    <span class="menu-text"> sobre </span>
-                </a>
-            </li>
-
-            <li class="menu-item">
-                <a href="#contato" class="menu-link">
-                    <i class="menu-icon bi-telephone"></i>
-                    <span class="menu-text"> contato </span>
-                </a>
-            </li>
-
-        </ul> <!-- fim UL -->
-
-    </nav> <!-- fim mobile -->
-
-     <main id="home">
-
-        <div class="main-content">
-
-            <h1>Onde a estética encontra o significado </h1>
-             <p>Maryssa Eduarda, São Paulo - SP, Desidner Grafico </p>
-
-              <ul class="menu menu-social">
-
-                <li>
-                    <a class="menu-link" href="https://github.com/Maryssa16/Maryssa16">
-                       <i class="menu-icon bi bi-github"></i> 
-                    </a>
-                </li>
-
-        
-              
-                  <li>
-                        <a class="menu-link" href="">
-                           <i class="menu-icon bi bi-linkedin"></i> 
+    
+            </ul> <!-- fim UL -->
+    
+        </nav> <!-- fim mobile -->
+    
+         <main id="home">
+    
+            <div class="main-content">
+    
+                <h1>Onde a estética encontra o significado </h1>
+                 <p>Maryssa Eduarda, São Paulo - SP, Desidner Grafico </p>
+    
+                  <ul class="menu menu-social">
+    
+                    <li>
+                        <a class="menu-link" href="https://github.com/Maryssa16/Maryssa16">
+                           <i class="menu-icon bi bi-github"></i> 
                         </a>
-                 </li>
+                    </li>
+    
+            
+                  
+                      <li>
+                            <a class="menu-link" href="">
+                               <i class="menu-icon bi bi-linkedin"></i> 
+                            </a>
+                     </li>
+    
+                    
+                    <li>
+                        <a class="menu-link" href="">
+                           <i class="menu-icon bi bi-instagram"></i> 
+                       </a>
+                    </li>
+    
+                 
+                  </ul>
+    
+                  <a href="#projetos">
+    
+                    <button class="btn btn-primary">
+                        <span class=""> Ver Projetos</span>
+                          <i class="bi bi-arrow-down-right"> </i>
+                    </button>
+                  </a>
+                 
+    
+            </div>
+    
+              <div class="video">
+                <iframe  src="https://www.youtube.com/embed/O1Dm5cy7X1E" title="Canva | Designed for work" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+    
+         </main>
+    
+            <section id="projetos" class="projetos">
 
-                
-                <li>
-                    <a class="menu-link" href="">
-                       <i class="menu-icon bi bi-instagram"></i> 
-                   </a>
-                </li>
+                <h2>Projetos</h2>
 
-             
-              </ul>
+                <div class="projeto-container">
 
-              <a href="#projetos">
+                    <div class="projeto-card">
 
-                <button class="btn btn-primary">
-                    <span class=""> Ver Projetos</span>
-                      <i class="bi bi-arrow-down-right"> </i>
-                </button>
-              </a>
-             
+                        <img src="/img/projetos 3.jpg" alt="" class="img-card">
 
-        </div>
+                        <div class="card-body">
 
-          <div class="video">
-            <iframe  src="https://www.youtube.com/embed/O1Dm5cy7X1E" title="Canva | Designed for work" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
+                            <h3 class="card-title">Josì 's Box</h3>
 
-     </main>
+                            <p class="card-descriçao">Ecommerce de Livros </p>
 
-        <section id="projetos" class="projetos">
+                            <ul class="Card-lista">
 
-        </section>  <!-- fim projetos -->
+                                <li class="card-item">
+                                    <p>Adaptação ás tendências e Inovações</p>
+                                </li>
+
+                                
+                                <li class="card-item">
+                                    <p>Conhecimento de Ferramentas e Software </p>
+                                </li>
+
+                                
+                                <li class="card-item">
+                                    <p>Criatividade e Inovação</p>
+                                </li>
+
+                            </ul>
+                               <div class="card-button"> <!-- div botão -->
+
+                                <button class="btn btn-primary">
+                                    <a href="" target="">
+                                        
+                                        <span> Prévia</span>
+                                        <i class="bi bi-arrow-down-right"></i>
+                                    </a>
+                                </button>
+
+                                <button class="btn">
+                                    <a href="https://maryssa16.github.io/Animed_org_2024/" target="">
+
+                                        <i class="bi bi-github"></i>
+
+                                        <span>Repositória</span>
+                                    </a>
+                                </button>
 
 
-</body>
-</html>
+
+
+                               </div> <!-- fim do botão:) -->
+
+                               
+
+
+                        </div> <!-- fim da card-bory -->
+
+
+                    </div>  <!-- fim do projeto1 -->
+
+                </div>  <!-- fim proj contener -->
+    
+            </section>  <!-- fim projetos -->
+
+
+    
+             <script src="/js/script.js"></script>
+
+           
+    
+    
+    </body>
+ </html>
+
+
+
+
+
+
+
