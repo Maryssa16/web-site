@@ -495,8 +495,37 @@ h3{
 
 
 .accordion-item.active .accordion-header{
-    background: var(--cor--menu);
+    background: var();
 }
+
+.accordion-item {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 16px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 16px;
+    border-top: 1px solid var(--cor--menu);
+    border-bottom: 1px solid var(--cor--menu);
+}
+
+
+
+.contato p {
+    text-align: center;
+}
+
+.contato button {
+    margin-bottom: 80px;
+}
+
 
 /*  Responsivo  */
 
@@ -570,6 +599,19 @@ h3{
 @media (max-width: 768px) {
     .projetos h2 {
         font-size: 60px;
+    }
+
+    .accordion-item {
+        width: 90vw; /* viewport width */
+    }
+
+    .contato {
+        padding: 90px;
+
+    }
+
+    .contato p{
+        width: 80%;
     }
 }
 /* Fim comprimento até 768px */
