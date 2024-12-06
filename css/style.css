@@ -526,6 +526,20 @@ h3{
     margin-bottom: 80px;
 }
 
+footer {
+    margin-bottom: 80px;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 12px;
+    text-align: center;
+    padding: ;
+}
+
+footer a {
+    color: #7189ff;
+}
 
 /*  Responsivo  */
 
