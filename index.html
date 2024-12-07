@@ -17,6 +17,9 @@
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- aos js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     
 </head>
 
@@ -59,7 +62,7 @@
         <!-- LOGO -->
         <div class="header-logo">
             <a href="#home">
-                <img src="img/Untitled (2).png" alt="" width="60px" height="50px">
+                <img src="img/Untitled (1).png" alt="" class="logo" width="60px" height="50px">
             </a>
         </div>
 
@@ -110,7 +113,7 @@
 
         <div class="main-content">
 
-            <h1>Onde a estética encontra o significado </h1>
+            <h1 data-aos="fade">Onde a estética encontra o significado </h1>
              <p>Maryssa Eduarda, São Paulo - SP, Desidner Grafico </p>
 
               <ul class="menu menu-social">
@@ -307,7 +310,7 @@
             <!-- Projeto 1 -->
             <div class="projeto-card">
 
-                <img src="img/projetos/portfolio.PNG" alt="" class="img-card" width="24px" height="34px">
+                <img src="img/mary.png" alt="" class="img-card" width="" height="">
 
                 <div class="card-body">
 
@@ -594,57 +597,83 @@
             </a>
         </p>
 
-        <div class="from-contato">
+        <div class="form-contato">
 
-            <form action="https://formspree.io/f/xqakjdky" method="POST">
+            <label for="name" class="form-label">
 
-                <label for="none" class=""> Seu Nome</label>
 
-                <input type="text" placeholder="digite seu nome completo">
 
-            <div class="form-email">
-                <label for="email"> E-mail *</label>
-
-                <input type="email" name="email" id="email" required>
-            </div>
-
-            <div class="">
-
-                <label for="tel">Telefone</label>
+                <form action="https://formspree.io/f/mgveqlwj" method="post">
                 
-                Celular
-                <input type="radio" name="tel">
-                <input type="radio" name="tel">
-                <br>
-                e-mail
-                <input type="radio" name="tel">
-                <input type="radio"  name="tel">
+                <div class="form-grup">
+
+                 <label for="none" class="form-label"> 
+                    Seu Nome
+
+                 <input type="text" name="name"  id=""  class="">
+
+                </label>
+
+                </div>
+
+                
+
+              <div class="form-email">
+                 <label for="email" class="form-label"> 
+                    
+                    E-mail *
+
+                  <input type="email" name="email" id="email" class="form-input" required>
+
+                  </label>
+              </div>
+
+            
+
+
+            <div class="form-grup">
+
+                <label for="file" class="form-label">
+                     Anexar Arquivo
+
+                 <input type="file" name="file" id="file" class="form-input-file">
+
+                </label>
+
+            </div>
+
+            <div class="form-grup">
+                <label for="message" class="form-label">
+                    
+               
+                  <textarea name="message" id="message" rows="5" class="form-textarea" placeholder="digite sua mensagem aqui-------"></textarea>
+
+                </label>
 
             </div>
 
 
-            <div class="form-grupo">
-                <label for=""> Menssagem de Erro</label>
-
-                <input type="file">
-
-            </div>
-
-            <div class="">
-                <textarea name="message" id="message" rows=""></textarea>
-            </div>
 
 
 
+              <div class="btn-form">
+             
+                 <button type="submit" class="form-button">
 
-                <button type="submit">
                     Enviar
+
                 </button>
+            </div>
+
             </form>
+
         </div>
 
 
     </footer>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
          <script src="/js/script.js"></script>
 
